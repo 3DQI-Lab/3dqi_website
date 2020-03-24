@@ -1,0 +1,82 @@
+body {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, Arial, sans-serif;
+    margin:0;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0;
+}
+
+h2 {
+    font-weight: bold;
+	font-size: 20px;
+    margin-top: 20px;
+}
+
+#top-bar {
+    color: #ffffff;
+    background-color: #025771;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: relative;
+}
+
+#mgh-logo {
+    position: absolute;
+    left: 5%;
+}
+
+#harvard-logo {
+    position: absolute;
+    right: 5%;
+}
+
+#left-nav ul {
+    background: #007193;
+    list-style-type: none;
+    margin-top: 0;
+    margin-left: 10%;
+    padding: 0;
+    width: 15%;
+    position: fixed;
+    height: 100%;
+    overflow: auto;	
+}
+
+#left-nav li{
+
+}
+
+#left-nav li a {
+    display: block;
+    color: #ffffff;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+#left-nav li a img {
+	position: absolute;
+}
+
+#left-nav li a p {
+	margin-top: 10px;
+	margin-left: 40px;
+}
+
+#left-nav li a.active {
+    background-color: #4CAF50;
+    color: #ffffff;
+}
+
+#left-nav li a:hover:not(.active) {
+    background-color: #049CCA;
+    color: #ffffff;
+}
+
+
+
