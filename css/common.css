@@ -11,7 +11,7 @@ h1 {
 
 h2 {
     font-weight: bold;
-	font-size: 20px;
+    font-size: 20px;
     margin-top: 20px;
 }
 
@@ -36,6 +36,11 @@ h2 {
     right: 5%;
 }
 
+#top-bar-title {
+    margin-left:15%;
+    margin-right:15%;
+}
+
 #left-nav ul {
     background: #007193;
     list-style-type: none;
@@ -45,7 +50,7 @@ h2 {
     width: 15%;
     position: fixed;
     height: 100%;
-    overflow: auto;	
+    overflow: auto;
 }
 
 #left-nav li{
@@ -60,12 +65,12 @@ h2 {
 }
 
 #left-nav li a img {
-	position: absolute;
+    position: absolute;
 }
 
 #left-nav li a p {
-	margin-top: 10px;
-	margin-left: 40px;
+    margin-top: 10px;
+    margin-left: 40px;
 }
 
 #left-nav li a.active {
