@@ -1,2 +1,12 @@
+#current-content h2 {
+	font-size: 30px;
+}
+
+#current-content figure {
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
 #current-content figcaption {
+	margin-top: 20px;
 }
