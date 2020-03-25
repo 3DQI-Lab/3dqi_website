@@ -1,7 +1,7 @@
 body {
     font-family: "Century Gothic", CenturyGothic, AppleGothic, Arial, sans-serif;
     margin:0;
-	position: relative;
+    position: relative;
 }
 
 h1 {
@@ -78,9 +78,9 @@ h2 {
     height: 100%;
 }
 
-#left-nav li a:active {
+.manualActive {
     background-color: #4CAF50;
-    color: #ffffff;
+    color: #ff0000;
 }
 
 #left-nav li a:hover {
