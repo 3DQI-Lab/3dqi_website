@@ -1,0 +1,14 @@
+#current-content table {
+    border-spacing:0;
+}
+
+#current-content td {
+    margin:0;
+    padding:0;
+}
+
+#current-content ul {
+	list-style-type: circle;
+    list-style-position: outside;
+	padding: 0;
+}
