@@ -1,6 +1,7 @@
 body {
     font-family: "Century Gothic", CenturyGothic, AppleGothic, Arial, sans-serif;
     margin:0;
+	position: relative;
 }
 
 h1 {
@@ -48,7 +49,6 @@ h2 {
     margin-left: 10%;
     padding: 0;
     width: 15%;
-    height: 80%;
     overflow: auto;
     position: absolute;
 }
