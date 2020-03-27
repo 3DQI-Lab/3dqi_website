@@ -1,10 +1,21 @@
 #current-content h2 {
-	font-size: 30px;
+    font-size: 30px;
 }
 
 #current-content figure {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#current-content table {
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 #current-content figcaption {
-	margin-top: 20px;
+    margin-top: 20px;
 }

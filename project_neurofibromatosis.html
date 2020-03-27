@@ -3,7 +3,7 @@
 <head>
     <title>3DQI</title>
     <link href="css/common.css" rel="stylesheet">
-    <link href="css/project-covid.css" rel="stylesheet">
+    <link href="css/project-neurofibromatosis.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="js/loadCommon.js"></script>
 </head>
@@ -15,20 +15,11 @@
 
 <div id="current-content">
 
-<h2>AI-Powered Quantitative Assessment of Coronavirus Pneumonia (COVID-19) in CT Images</h2>
-
-<p>The coronavirus disease 2019 has evolved into a global pandemic with ever-increasing health, economic and social impact. One pressing clinical challenge we are currently addressing at 3D Imaging Lab is to properly classify new patients according to quantifiable measures of disease severity so as to optimize healthcare resource utilization. We use our namesake freeware 3DQI to segment healthy tissues and pathological lesions in lungs, compute hundreds of radiomic features, and develop machine learning models to seek the most accurate answers to the clinical problems facing us.</p>
+<h2>Quantification of Neurofibromatosis in Whole-body MRI</h2>
 
 <figure>
-    <img src="image/project/covid/covid-1.png" width="800">
-    <figcaption>A 54-year-old female COVID-19 patient confirmed by RT-PCR positive on 01/24/2020. Chest CT scans on 01/24/2020 and 01/30/2020 show the progress of pneumonia: from the initial multifocal ground-glass opacities (GGOs) to multifocal consolidation; lesions in right lung changed from 130.98 CC (-524.8 &plusmn; 147.1 HU) to 195.9 CC (-427.2 &plusmn; 281.5 HU), lesions in left lung changed from 231.4 CC (-511.5 &plusmn; 150.7 HU) to 153.6 CC (-442.9 &plusmn; 281.2 HU).</figcaption>
-</figure>
-
-<hr>
-
-<figure>
-    <img src="image/project/covid/severity_level.png" width="800">
-    <figcaption>CT images of typical patients with moderate, severe and critical COVID-19. Some patients are at in-between stages, necessitating the development of an automatic and accurate classifier.</figcaption>
+    <img src="image/project/neurofibromatosis/1.png">
+    <figcaption>Total tumor burden given as number of schwannomas per body region. Total tumor burden given as volume of schwannomas per body region. In total, there were 63 schwannomas in this subject, including 43 discrete and 20 plexiform tumors. The total tumor volume was 2496 cc.</figcaption>
 </figure>
 
 <hr>
@@ -36,11 +27,11 @@
 <figure>
     <table>
         <tr>
-            <td><img src="image/project/covid/selected_features.png" width="400"></td>
-            <td><img src="image/project/covid/confusion_matrix.png" width="500"></td>
+            <td><img src="image/project/neurofibromatosis/2.png" height="400"></td>
+            <td><img src="image/project/neurofibromatosis/3.png" height="400"></td>
         </tr>
     </table>
-    <figcaption>Heatmap of the selected features (left) and performance of the machine learning model (right). Each patient has a large collection of clinical "features" that can be used as measures of COVID-19 severity (1 = moderate, 2 = severe, 3 = critical). They are, however, not equally effective candidates. We algorithmically identify and select the best features in the sense that they give rise to a machine learning model with highest classification accuracy. The confusion matrix reveals which predicted category the machine learning model puts the reference cases into. Our model has thus far achieved 78.2% overall accuracy.</figcaption>
+    <figcaption>Tumor burden given as number of tumors (left). Tumor burden given as volumes of tumors (right).</figcaption>
 </figure>
 
 </div>
