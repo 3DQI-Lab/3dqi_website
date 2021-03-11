@@ -5,12 +5,44 @@
 #current-content td {
 }
 
-#current-content ul {
-	list-style-type: square;
-    list-style-position: outside;
-	padding: 0;
+#current-content .placeholder {
+    height: 200px;
 }
 
-#current-content .placeholder {
-	height: 200px;
+#project-ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-img {
+    float: left;
+    width: 3%;
+    height: auto;
+	margin-left: 2%;
+    margin-right: 2%;
+}
+
+.project-li {
+    font-size:26px;
+    line-height: 2;
+    margin: 10px;
+	border-radius: 20px;
+}
+
+.project-li:nth-child(odd) {
+    background: #2abb9b;
+}
+
+.project-li:nth-child(even) {
+    background-color: #f0932b;
+}
+
+
+
+.project-a {
+    text-decoration: none;
+}
+
+.project-a:link {
+    color: #ffffff;
 }
