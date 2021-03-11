@@ -40,6 +40,15 @@
 }
 
 .project-a:link {
+    font-weight: normal;
     color: #ffffff;
+}
+
+.project-a:visited {
+    color: #ffffff;
+}
+
+.project-a:hover {
+    font-weight: bold;
 }
 
