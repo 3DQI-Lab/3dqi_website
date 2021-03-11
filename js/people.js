@@ -29,13 +29,9 @@ function addAPerson(name, title, imgSrc) {
 
 window.addEventListener("load", () => {
     addAPerson("Yin Wu, Ph.D."      , "Research Scientist", "image/people/yin_wu.png");
-    addAPerson("Guanghua Tan, Ph.D.", "Research Fellow"   , "image/people/guanghua_tan.png");
-    addAPerson("Ying Li, M.D."      , "Research Fellow"   , "image/people/ying_li.png");
-    addAPerson("Jinghui Lu, M.D."   , "Research Fellow"   , "image/people/jinghui_lu.png");
-    addAPerson("Tianyu Liu, Ph.D."  , "Research Fellow"   , "image/people/tianyu_liu.jpg");
-    addAPerson("Qijun Shen, M.D."   , "Research Fellow"   , "image/people/qijun_shen.jpg");
+    addAPerson("Tianyu Liu, Ph.D."  , "Research Scientist"   , "image/people/tianyu_liu.jpg");
     addAPerson("Guibo Luo, Ph.D."   , "Research Fellow"   , "image/people/guibo_luo.png");
-    addAPerson("Enhao Liu, B.S."    , "Research Fellow"   , "image/people/enhao_liu.jpg");
+    addAPerson("Bin Li, Ph.D."   , "Research Scientist"   , "image/people/default_avatar.png");
 
     let myDiv = document.querySelector("#current-members-div");
     let placeHolderDiv = document.createElement("div");

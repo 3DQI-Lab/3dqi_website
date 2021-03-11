@@ -1,5 +1,5 @@
 body {
-    font-family: "Century Gothic", CenturyGothic, AppleGothic, Arial, sans-serif;
+    font-family: "Century Gothic", sans-serif;
     margin:0;
     position: relative;
 }
@@ -12,7 +12,7 @@ h1 {
 
 h2 {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
     margin-top: 20px;
 }
 
@@ -89,7 +89,7 @@ h2 {
 }
 
 #current-content {
-    font-family: Arial, sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-size: 20px;
     margin-left:30%;
     margin-right:15%;
