@@ -22,9 +22,157 @@
 
 <h2>Electronic Cleansing in CT Colonography</h2>
 
-<p>Electronic cleansing (EC), aka digital bowel cleansing, is a process for identifying the tagged fecal materials, and subtract them from CTC images to &ldquo;virtually cleanse&rdquo; the colon.</p>
+<p>Electronic cleansing (EC), aka digital bowel cleansing, is a process for identifying the tagged fecal materials, and subtract them from CTC images to &ldquo;virtually cleanse&rdquo; the colon in CT colonography (CTC).</p>
 
 <img src="image/project/colonography/1.png" width="800">
+
+
+
+
+
+
+
+
+
+<h3>Structure-analysis Cleansing</h3>
+
+<p>We developed a structure-analysis cleansing (SA-cleansing) method by using local morphologic features represented by the eigenvalue signatures of a Hessian matrix.</p>
+<ul>
+    <li>Submerged folds and polyps are enhanced using morphologic (polyp and fold) enhancement functions.</li>
+    <li>Submerged colonic structures are restored by their enhancements while tagged regions are removed.</li>
+</ul>
+
+<figure>
+    <table>
+        <tr>
+            <td><img src="image/project/colonography/2.png" width="400"></td>
+            <td><img src="image/project/colonography/3.png" width="400"></td>
+        </tr>
+    </table>
+</figure>
+
+<div class="my-publication">
+Cai, W., Zalis, M.E., Näppi, J., Harris, G.J. and Yoshida, H., 2008. Structure‐analysis method for electronic cleansing in cathartic and noncathartic CT colonography. <i>Medical physics</i>, 35(7 Part1), pp.3259-3277.
+</div>
+
+<hr>
+
+
+
+
+
+
+<h3>Mosaic Decomposition Cleansing</h3>
+<p>We developed a mosaic decomposition (MD) cleansing method for subtraction of inhomogeneously tagged solid or semi-solid fecal residuals in non-cathartic CTC images.</p>
+<ul>
+    <li>Decompose the colonic region into a set of local homogeneous regions, called tiles.</li>
+    <li>Calculate a soft-tissue index using an SVM classifier based on the texture and morphological features of a tile.</li>
+    <li>Preserve the tiles with a high soft-tissue index and remove those with a low soft-tissue index.</li>
+</ul>
+
+<figure>
+    <table>
+        <tr>
+            <td><img src="image/project/colonography/4.png" width="800"></td>
+        </tr>
+        <tr>
+            <td><img src="image/project/colonography/5.png" width="600"></td>
+        </tr>
+    </table>
+</figure>
+
+<div class="my-publication">
+Cai, W., Lee, J.G., Zalis, M.E. and Yoshida, H., 2010. Mosaic decomposition: An electronic cleansing method for inhomogeneously tagged regions in noncathartic CT colonography. <i>IEEE transactions on medical imaging</i>, 30(3), pp.559-574.
+</div>
+
+<hr>
+
+
+
+
+
+
+
+
+<h3>Virtual Colon Tagging</h3>
+<p>We developed a Virtual Colon Tagging (VCT) method in dual-energy CT colonography by using the three-material decomposition in DE-CTC images for minimizing EC artifacts:</p>
+<ul>
+    <li>Virtually elevates the CT value of luminal air as high as that of the tagged fecal materials for virtually tagging the entire colonic lumen.</li>
+    <li>Reduce the EC artifacts caused by partial volume effect at air-tagging boundary and in inhomogeneous tagging region (e.g. submerged air bubbles).</li>
+</ul>
+
+<figure>
+    <table>
+        <tr>
+            <td><img src="image/project/colonography/6.png" width="800"></td>
+        </tr>
+    </table>
+</figure>
+
+<div class="my-publication">
+Cai, W., Lee, J.G., Zhang, D., Kim, S.H., Zalis, M. and Yoshida, H., 2014. Electronic cleansing in fecal-tagging dual-energy CT colonography based on material decomposition and virtual colon tagging. <i>IEEE Transactions on Biomedical Engineering</i>, 62(2), pp.754-765.
+</div>
+
+<hr>
+
+
+
+
+
+<h3>Non-Cathartic CT colonography</h3>
+<p>We conducted the first multicenter prospective clinical trial: &#8220;Non-Cathartic CT colonography&#8221; (ClinicalTrials.gov registration number: NCT01200303), which had recruited 653 subjects who underwent both ncCTC examination and OC. We had applied our EC method in this trial.</p>
+
+<figure>
+    <table>
+        <tr>
+            <td><img src="image/project/colonography/7.png" width="400"></td>
+            <td><img src="image/project/colonography/8.png" width="400"></td>
+        </tr>
+    </table>
+</figure>
+
+<div class="my-publication">
+Zalis, M.E., Blake, M.A., Cai, W., Hahn, P.F., Halpern, E.F., Kazam, I.G., Keroack, M., Magee, C., Näppi, J.J., Perez-Johnston, R. and Saltzman, J.R., 2012. Diagnostic accuracy of laxative-free computed tomographic colonography for detection of adenomatous polyps in asymptomatic adults: a prospective evaluation. <i>Annals of internal medicine</i>, 156(10), pp.692-702.
+</div>
+
+<hr>
+
+
+
+
+
+<h3>Non-cathartic, sub-mSv, dual-energy CTC </h3>
+<p>We developed a ultra-low dose, non-cathartic dual-energy CT CT colonography for colon cancer screening:</p>
+<ul>
+    <li>Non-cathartic CTC: eliminate patients&#39; concern of cathartic bowel preparation in CTC examination.</li>
+    <li>Sub-mSv CTC: reduce the radiation dose to less than 1 mSv, as colon is one of five most radiosensitive organs.</li>
+</ul>
+
+<figure>
+    <table>
+        <tr>
+            <td><img src="image/project/colonography/9.png" height="300"><figcaption>CTDIvol = 0.96 mGy  / DLP = 41 mGy &middot; cm<br>
+Effective Dose = 41 &times; 0.015 = 0.615 mSv
+</figcaption></td>
+            <td><img src="image/project/colonography/10.png" height="300"><figcaption>CTDIvol = 1.05 mGy  /   DLP = 44 mGy &middot; cm<br>
+Effective Dose = 44 &times; 0.015 = 0.66 mSv
+</figcaption></td>
+        </tr>
+    </table>
+</figure>
+
+<div class="my-publication">
+Cai, W., Lee, J.G., Zhang, D., Kim, S.H., Zalis, M. and Yoshida, H., 2014. Electronic cleansing in fecal-tagging dual-energy CT colonography based on material decomposition and virtual colon tagging. <i>IEEE Transactions on Biomedical Engineering</i>, 62(2), pp.754-765.
+</div>
+
+
+
+
+
+
+
+<div class="placeholder">
+</div>
 
 </div>
 

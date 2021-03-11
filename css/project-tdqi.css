@@ -1,0 +1,13 @@
+.eula {
+    background-color: #cccccc;
+    padding: 10px;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+.eula h2 {
+	text-align: left;
+	font-size: 20px;
+}
