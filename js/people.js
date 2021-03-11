@@ -6,25 +6,29 @@ function addAPerson(name, title, imgSrc) {
     let parentDiv = document.querySelector("#current-members-div");
 
     let myDiv = document.createElement("div");
+    myDiv.classList.add("people-instance");
     parentDiv.appendChild(myDiv);
 
+    let divImg = document.createElement("div");
+    divImg.classList.add("people-photo");
     let img = document.createElement("img");
     img.src = imgSrc;
     img.height = "200";
     img.classList.add("member-img");
-    myDiv.appendChild(img);
+    divImg.appendChild(img);
 
+    let divBio = document.createElement("div");
+    divBio.classList.add("people-bio");
     let para = document.createElement("p");
     para.innerHTML = "<strong>" + name + "</strong>";
-    myDiv.appendChild(para);
+    divBio.appendChild(para);
 
     para = document.createElement("p");
     para.textContent = title;
-    myDiv.appendChild(para);
+    divBio.appendChild(para);
 
-    let placeHolderDiv = document.createElement("div");
-    placeHolderDiv.classList.add("fix-ugly-float");
-    myDiv.appendChild(placeHolderDiv);
+    myDiv.appendChild(divImg);
+    myDiv.appendChild(divBio);
 }
 
 window.addEventListener("load", () => {

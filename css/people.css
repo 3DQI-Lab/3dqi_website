@@ -1,18 +1,47 @@
-#current-content div {
-    margin-top:50px;
-    margin-bottom:50px;
-}
-
 #current-content p {
     margin-top:20px;
     margin-bottom:10px;
 }
 
+#current-content h2 {
+    margin-top:60px;
+}
+
+#people-leader {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#people-leader-left {
+    flex: 50%;
+}
+
+#people-leader-right {
+    flex: 50%;
+}
+
+.people-instance {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+}
+
+.people-photo {
+    padding-right: 10px;
+    /* flex is a shorthand for tuple  */
+    /* --- flex-grow */
+    /* --- flex-shrink */
+    /* --- flex-basis */
+    flex: 0 1 100px;
+}
+
+.people-bio {
+    padding-left: 10px;
+}
+
 .member-img {
-    width: 20%;
+    width: 180px;
     height: auto;
-    float: left;
-    margin-right: 20px;
 }
 
 .fix-ugly-float {

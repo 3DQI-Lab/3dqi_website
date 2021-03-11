@@ -40,8 +40,8 @@ figcaption {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 15px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     position: relative;
 }
 
@@ -64,7 +64,7 @@ figcaption {
     background: #007193;
     list-style-type: none;
     margin-top: 0;
-    margin-left: 10%;
+    margin-left: 5%;
     padding: 0;
     width: 15%;
     overflow: auto;
@@ -109,8 +109,8 @@ figcaption {
 #current-content {
     font-family: "Titillium Web", sans-serif;
     font-size: 20px;
-    margin-left:30%;
-    margin-right:15%;
+    margin-left: 25%;
+    margin-right: 6%;
     padding-top: 40px;
 }
 
