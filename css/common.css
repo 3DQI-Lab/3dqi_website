@@ -18,6 +18,13 @@ h2 {
     margin-top: 20px;
 }
 
+
+hr {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+
 #top-bar {
     color: #ffffff;
     background-color: #025771;
@@ -97,3 +104,31 @@ h2 {
     margin-right:15%;
     padding-top: 40px;
 }
+
+.my-publication {
+    color: #000000;
+    background-color: #a2ded0;
+    border-style: solid;
+    border-color: #000000;
+    border-radius: 10px;
+    border-width: 2px;
+}
+
+
+.placeholder {
+    height: 200px;
+}
+
+
+/* a link with which to go back to the parent node */
+.a-go-back {
+    text-decoration: none;
+}
+
+.span-go-back {
+    font-style: italic;
+}
+
+
+
+

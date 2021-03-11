@@ -20,24 +20,174 @@
 
 <div id="current-content">
 
-<h2>Quantification of Neurofibromatosis in Whole-body MRI</h2>
+<a href="./project.html?pageName=a-project" class="a-go-back">
+<div>
+    <span class="span-go-back">
+    Go Back to Research
+    </span>
+</div>
+</a>
+
+<h2>Neurofibromatosis (NF)</h2>
+
+<p>
+Neurofibromatoses (NFs), including NF1, NF2, and schwannomatosis, are a group of autosomal-dominant neurogenetic disorders characterized by a predisposition in virtually 100% of patients to develop multiple nerve sheath tumors. Magnetic resonance imaging (MRI), in particular short term inversion recovery (STIR) sequence, is the common imaging modality to determine volumetric tumor burden in NF patients. We have developed a series of volumetric imaging analysis tools for quantification of NF tumor burden in the longitudinal monitoring and assessment of tumor response.
+</p>
 
 <figure>
-    <img src="image/project/neurofibromatosis/1.png">
-    <figcaption>Total tumor burden given as number of schwannomas per body region. Total tumor burden given as volume of schwannomas per body region. In total, there were 63 schwannomas in this subject, including 43 discrete and 20 plexiform tumors. The total tumor volume was 2496 cc.</figcaption>
+    <img src="image/project/neurofibromatosis/4.png" width="600">
+    <figcaption>Volumetric imaging analysis of NF in MRI.</figcaption>
 </figure>
 
 <hr>
 
+
+
+
+
+
+
+<h3>Semi-automated NF1 Segmentation: Dynamic-thresholding (DT) Level Set</h3>
+
+<p>
+We developed the dynamic-thresholding (DT) level set by implementing the propagating shell, which is a thick 3D region encompassing the level set front. This propagating shell is pushed or pulled toward the boundary of a tumor by a designed dynamic-thresholding speed function to balance the tumor region and background in a histogram. The shell reaches the convergence position where the inner half shell is located inside the tumor and the outer half is located in the background, at which the threshold shift is minimized and the threshold becomes stable.
+</p>
+
 <figure>
     <table>
         <tr>
-            <td><img src="image/project/neurofibromatosis/2.png" height="400"></td>
-            <td><img src="image/project/neurofibromatosis/3.png" height="400"></td>
+            <td><img src="image/project/neurofibromatosis/5.png" height="300"></td>
+            <td><img src="image/project/neurofibromatosis/6.jpg" height="300"></td>
+            <td><img src="image/project/neurofibromatosis/1.png" height="400"></td>
         </tr>
     </table>
-    <figcaption>Tumor burden given as number of tumors (left). Tumor burden given as volumes of tumors (right).</figcaption>
 </figure>
+
+<div class="my-publication">
+Cai, W., Kassarjian, A., Bredella, M.A., Harris, G.J., Yoshida, H., Mautner, V.F., Wenzel, R. and Plotkin, S.R., 2009. Tumor burden in patients with neurofibromatosis types 1 and 2 and schwannomatosis: determination on whole-body MR images. <i>Radiology</i>, 250(3), pp.665-673.
+</div>
+
+<hr>
+
+
+
+
+
+<h3>Deep parametric active contours (DPAC) for NF segmentation</h3>
+
+<p>
+We proposed a novel end-to-end framework, Deep Parametric Active Contours (DPAC), that integrates the Active Contour Models (ACMs) with the robust nonlinear priori feature extraction abilities of the Convolutional Neural Networks (CNN).
+</p>
+
+<ul>
+    <li>Add a new force term into the ACM.</li>
+    <li>Predict the local parameter maps into the ACM.</li>
+    <li>Apply deep-learning to neurofibromatosis segmentation.</li>
+</ul>
+
+<figure>
+    <img src="image/project/neurofibromatosis/6.png" width="600">
+</figure>
+
+<div class="my-publication">
+Wu, X., Tan, G., Li, K., Li, S., Wen, H., Zhu, X. and Cai, W., 2020. Deep Parametric Active Contour Model for Neurofibromatosis Segmentation. <i>Future Generation Computer Systems</i>, 112, pp.58-66.
+</div>
+
+<hr>
+
+
+
+
+
+<h3>Random-Walk for NF segmentation</h3>
+[under construction]
+
+<hr>
+
+
+
+
+
+<h3>Volumetric Tumor Analysis for Quantification of Whole-body Tumor Burden on WBMRI</h3>
+<p>
+In the DoD NF clinical study (PI: Scott R. Plotkin), &#8220;Whole-body MRI evaluation of subjects with NF1, NF2, and schwannomatosis&#8221;, we quantified NF tumor burden on whole-body MRI images using our computerized quantification technique. We recruited 247 patients who underwent whole-body MRI, including 141 NF1 patients (57%), 55 NF2 patients (22%), and 51 schwannomatosis patients (21%). In this cohort, we identified a total of 1286 nerve sheath tumors (528 plexiform and 758 discrete tumors) in 145/247 patients (59%).
+</p>
+
+<figure>
+    <table>
+        <tr>
+            <td><img src="image/project/neurofibromatosis/7.png" height="400"></td>
+            <td><img src="image/project/neurofibromatosis/8.png" height="400"></td>
+        </tr>
+    </table>
+</figure>
+
+<div class="my-publication">
+Plotkin, S.R., Bredella, M.A., Cai, W., Kassarjian, A., Harris, G.J., Esparza, S., Merker, V.L., Munn, L.L., Muzikansky, A., Askenazi, M. and Nguyen, R., 2012. Quantitative assessment of whole-body tumor burden in adult patients with neurofibromatosis. <i>PloS one</i>, 7(4), p.e35711.
+</div>
+
+<hr>
+
+
+
+
+
+<h3>Plasma S100β is not a useful biomarker for tumor burden in neurofibromatosis</h3>
+
+<p>We calculated whole-body tumor burden in subjects with NF1, NF2, and schwannomatosis using whole-body MRI (WBMRI) and measured the concentration of S100β in plasma using ELISA. There was no relationship between the presence of internal tumors and the presence of detectable S100β in blood for the overall group or for individual diagnoses (p>0.05 by chi-square for all comparisons).</p>
+
+<div class="my-publication">
+Smith, M.J., Esparza, S., Merker, V.L., Muzikansky, A., Bredella, M.A., Harris, G.J., Kassarjian, A., Cai, W., Walker, J.A., Mautner, V.F. and Plotkin, S.R., 2013. Plasma S100β is not a useful biomarker for tumor burden in neurofibromatosis. <i>Clinical biochemistry</i>, 46(7-8), pp.698-700.
+</div>
+
+<hr>
+
+
+
+
+
+
+
+<h3>Benign whole body tumor volume is a risk factor for malignant peripheral nerve sheath tumors in neurofibromatosis type 1</h3>
+
+<p>We compared the tumor volumes on whole-body MRI STIR images between 31 NF1 patients with MPNSTs and 62 age- and sex-matched NF1 patients, who did not have MPNSTs. The median total number of benign tumors and the median whole-body internal tumor volume were 2.0 and 352.0 cc respectively among the NF1 MPNST group, and were 1.0 and 3.8 cc respectively in the NF1 comparison group (p &#60; 0.001). The study revealed that higher numbers of plexiform tumors,  larger whole-body internal tumor volume, and younger age are important risk factors for MPNST.</p>
+
+<div class="my-publication">
+Nguyen, R., Jett, K., Harris, G.J., Cai, W., Friedman, J.M. and Mautner, V.F., 2014. Benign whole body tumor volume is a risk factor for malignant peripheral nerve sheath tumors in neurofibromatosis type 1. <i>Journal of neuro-oncology</i>, 116(2), pp.307-313.
+</div>
+<hr>
+
+
+
+
+<h3>Relationship between whole-body tumor burden, clinical phenotype, and quality of life in patients with neurofibromatosis</h3>
+
+
+<hr>
+
+
+<h3>Pain correlates with germline mutation in Schwannomatosis</h3>
+
+<hr>
+
+
+
+<h3>Volumetric MRI Analysis of Plexiform Neurofibromas in Neurofibromatosis Type 1: Comparison of Two Methods</h3>
+
+<hr>
+
+
+
+
+
+<h3>NF1 radiogenomics: Correlation between NF1 genotype and imaging phenotype on whole-body MRI</h3>
+
+
+
+
+
+<div class="placeholder">
+</div>
 
 </div>
 
