@@ -2,9 +2,7 @@
 
 { // start scope
 
-function addAPerson(name, title, imgSrc) {
-    let parentDiv = document.querySelector("#current-members-div");
-
+function addAPerson(name, title, imgSrc, parentDiv) {
     let myDiv = document.createElement("div");
     myDiv.classList.add("people-instance");
     parentDiv.appendChild(myDiv);
@@ -32,15 +30,22 @@ function addAPerson(name, title, imgSrc) {
 }
 
 window.addEventListener("load", () => {
-    addAPerson("Yin Wu, Ph.D."      , "Research Scientist", "image/people/yin_wu.png");
-    addAPerson("Tianyu Liu, Ph.D."  , "Research Scientist"   , "image/people/tianyu_liu.jpg");
-    addAPerson("Guibo Luo, Ph.D."   , "Research Fellow"   , "image/people/guibo_luo.png");
-    addAPerson("Bin Li, Ph.D."   , "Research Scientist"   , "image/people/default_avatar.png");
+    {
+        let parentDiv = document.querySelector("#current-members-div");
+        addAPerson("Yin Wu, Ph.D."      , "Research Scientist"   ,    "image/people/yin_wu.png"     , parentDiv);
+        addAPerson("Tianyu Liu, Ph.D."  , "Research Scientist"   , "image/people/tianyu_liu.jpg"    , parentDiv);
+        addAPerson("Guibo Luo, Ph.D."   , "Research Fellow"      , "image/people/guibo_luo.png"     , parentDiv);
+        addAPerson("Bin Li, Ph.D."      , "Research Scientist"   , "image/people/default_avatar.png", parentDiv);
+    }
 
-    let myDiv = document.querySelector("#current-members-div");
-    let placeHolderDiv = document.createElement("div");
-    placeHolderDiv.classList.add("fix-ugly-float");
-    myDiv.appendChild(placeHolderDiv);
+    {
+        let parentDiv = document.querySelector("#current-interns-div");
+        addAPerson("Enhao Liu"      , ""   , "image/people/enhao_liu.jpg"     , parentDiv);
+        addAPerson("Tim Tsai"       , ""   , "image/people/default_avatar.png", parentDiv);
+        addAPerson("Richard Xiao"   , ""   , "image/people/default_avatar.png", parentDiv);
+        addAPerson("Arthur Lee"     , ""   , "image/people/default_avatar.png", parentDiv);
+        addAPerson("Milo Loyall"    , ""   , "image/people/default_avatar.png", parentDiv);
+    }
 });
 
 } // end scope
